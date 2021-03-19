@@ -1,0 +1,34 @@
+Flexbox
+
+Propertries for flex container/parent:
+
+    display: flex | inline-flex;
+
+    flex-direction: row | row-reverse | column | column-reverse;
+
+	flex-wrap: wrap | nowrap | wrap-reverse;
+        flex-wrap is awesome! Flex-wrap sets items as wide as their content,
+	    when content doesn't fit on one ling, items wrap to another line.
+	    As screen size decreases, more items will come down onto new rows
+
+	flex-flow (shorthand for flex-direction and flex-wrap)
+
+	justify-content (main axis): flex-start | flex-end | center | space-between | space-around | space-evenly;
+        space-between - browser adds equal amount of space between elements-NOT ON BOTH SIDES ONLY between
+        space-around - browser adds equal amount of space on LEFT AND RIGHT of each element
+        space-evenly - browser adds equal amount of space between all elements and also side of viewport
+
+	align-items (cross axis - adjust to individual sizes): flex-start | flex-end | center | baseline | stretch;
+        baseline - wierd
+        stretch - fills container or row
+        align-items demo:
+        https://codepen.io/KittyGiraudel/pen/2bfe2c024739bdd4098572f87d1bf585
+        article:
+        https://css-tricks.com/almanac/properties/a/align-items/
+
+	align-content (cross axis - adjust to largest item): flex-start | flex-end | center | stretch | space-between | space-around;
+        determines spacing of Rows of items
+        article:
+        https://css-tricks.com/almanac/properties/a/align-content/
+
+        confused on difference between align-items and align-content
